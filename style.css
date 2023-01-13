@@ -1,0 +1,135 @@
+body{
+    background-color: black;
+}
+
+.flex{
+    height:650px;
+    width:100%;
+    display:flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position:relative;
+}
+.cards{
+    height:227px;
+    width:225px;
+    border:1px solid green;
+    background-color: green;
+    margin:3em auto;
+    border-radius: 20px;
+    color: white;
+    font-weight:bold ;
+    text-align: center;
+   
+}
+.cards:hover{
+    
+    background-color: red;
+}
+
+.card1:hover{
+    animation:myAnimation1 1s ease-in-out alternate-reverse
+}
+@keyframes myAnimation1 {
+    from{
+        transform :translate(15px)
+    }
+    to{
+        transform :translate(0deg)
+    }
+}
+
+.card2:hover{
+    animation:myAnimation2 1s ease-in-out alternate-reverse
+}
+@keyframes myAnimation2 {
+    from{
+        transform :translate(-15px)
+    }
+    to{
+        transform :translate(0deg)
+    }
+}
+ 
+.card3:hover{
+    animation:myAnimation3 1s ease-in-out alternate-reverse
+}
+@keyframes myAnimation3 {
+    from{
+        transform :translateY(-15px)
+    }
+    to{
+        transform :translate(0deg)
+    }
+}
+
+.card4:hover{
+    animation:myAnimation4 1s ease-in-out alternate-reverse
+}
+@keyframes myAnimation4 {
+    from{
+        transform :translateY(15px)
+    }
+    to{
+        transform :translate(0deg)
+    }
+}
+
+
+.card5:hover{   
+    transform : scale(1.2);
+}
+
+.card6:hover{ 
+    animation : myAnimation6 1s ease-in alternate-reverse
+}
+
+@keyframes myAnimation6 {
+    from{
+        transform : scale(0.5);
+    }
+    to{
+        height:227px;
+        width:225px;
+        
+    }
+}
+
+
+.card7:hover{
+    
+    animation : myAnimation7 2s ease-out normal
+}
+
+@keyframes myAnimation7 {
+    from{
+        height:227px;
+        width:225px;
+    }
+    to{
+        border-radius:50%;
+    }
+}
+
+
+.card8:hover{
+    
+    animation : myAnimation8 1s ease-out normal
+}
+@keyframes myAnimation8 {
+    from{
+        height:227px;
+        width:225px;
+    }
+    to{
+        width:300px;
+    }
+}
+
+.card9:hover{
+    transform:scaleY(2)
+}
+.card10:hover{
+    transform : rotate(45deg)
+}
